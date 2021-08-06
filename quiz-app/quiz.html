@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz-App</title>
+</head>
+<body>
+    <div id="main">
+        <h2>Random Quiz</h2>
+        <div id="quiz-container">
+            <p id="question">----Question----</p>
+            <div id="option">
+                <input type="radio" class="options" value="a" name="options">
+                <label id="optA">---Option1---</label>
+                <br>
+
+                <input type="radio" class="options" value="b" name="options">
+                <label id="optB">---Option1---</label>
+                <br>
+
+                <input type="radio" class="options" value="c" name="options">
+                <label id="optC">---Option1---</label>
+                <br>
+
+                <input type="radio" class="options" value="d" name="options">
+                <label id="optD">---Option1---</label>
+                <br>
+            </div>
+
+            <button id="nextbtn">Next</button>
+            <button id="result" style="visibility: hidden;">Analyse Result</button>
+            <button id="playagain" style="visibility: hidden;">Retake Quiz</button>
+
+        </div>
+    </div>
+
+    <script src="question.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

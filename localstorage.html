@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter Key"  id="key">
+    <input type="text" placeholder="Enter valye"  id="value">
+
+    <input type="button" value="Local" onclick="addTextLocal()">
+    <input type="button" value="Session" onclick="addTextSession()">
+
+
+    <script>
+        function addTextLocal() {
+            var key = document.getElementById('key').value;
+            var value = document.getElementById('value').value;
+
+            localStorage.setItem(key, value);  
+            fact = {};
+            fact.text = "Here is a fact";
+            fact.time = "10:30";
+
+            localStorage.setItem('facts', JSON.stringify(fact));
+            console.log(localStorage);
+        }
+
+        function addTextSession() {
+            var key = document.getElementById('key').value;
+            var value = document.getElementById('value').value;
+
+            sessionStorage.setItem(key, value);  
+            
+            console.log(sessionStorage);
+        }
+    </script>
+</body>
+</html>

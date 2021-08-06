@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button disabled='disabled'>Hello</button>
+</body>
+<script src = "https://MomentJS.com/downloads/moment.js"></script>
+<script>
+    var m = moment();
+    // console.log(m);
+    // console.log(m.duration(1, 'minutes').humanize());
+    //m = moment.utc(moment.duration(1, 'seconds'));
+    m = moment.utc().fromNow();
+    //m1 = moment.duration(1, hour);
+    //console.log(m1.toString()+"\n"+m.toString())
+    //m2 = m.subtract(m1).minutes();
+    var m3 = moment.utc().toString();
+
+    console.log(moment(m3).fromNow());
+    console.log(m);
+    //console.log(moment.utc(moment.duration(1, 'seconds').humanize()));
+</script>
+</html>
